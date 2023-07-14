@@ -46,6 +46,11 @@ body{
 .result{
     height: 16%;
     background-color:hsl(224, 56%, 13%);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-template-areas: "input1 input3 input2 finalResults";
+    gap: 3px;
 }
 .entrypoint{
     height: 70%;
@@ -242,3 +247,26 @@ body{
     background-color: hsl(6, 63%, 50%);
     
 }  
+input{
+    border: none;
+    outline: none;
+    height: 50px;
+}
+.input1{
+    grid-area: input1;
+}
+.input2{
+    grid-area: input2;
+}
+.input3{
+    grid-area:input3;
+    
+}
+.finalResult{
+    grid-area: finalResult;
+    background: White;
+    height: 50px;
+    position: relative;
+    bottom: 50px;
+    width:70px;
+}
