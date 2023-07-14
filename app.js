@@ -41,6 +41,8 @@ nine.addEventListener('click',()=>{
     appendValue('9')
 })
 
+let expression=''
+
 let appendValue=(value)=> {
     expression += value;
     document.getElementById('display').value = expression;
