@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90vw;
+    height: 95vh;
+    background-color: hsl(223, 31%, 20%);
+    /* background:hsl(60, 10%, 19%) ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* background: hsl(223, 31%, 20%); */
+    /* background-color: hsl(0, 0%, 100%); */
+}
+.box{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.frontpart, .result, .entrypoint{
+    width: 100%;
+     /* border: 1px solid green;  */
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+}
+.frontpart{
+    height: 10%;
+    color: hsl(0, 0%, 100%);
+    
+    
+    
+}
+.result{
+    height: 16%;
+    background-color:hsl(224, 56%, 13%);
+}
+.entrypoint{
+    height: 70%;
+    border-radius: 10px;
+    /* background: hsl(224, 36%, 15%); */
+    background-color: hsl(224, 46%, 11%);
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    padding: 5px;
+    grid-template-rows: repeat(5,1fr);
+    gap: 10px;
+    font-weight: 700;
+    grid-template-areas: "seven eight nine delete"" four five six plus" "one two three minus" "period zero slash times"" reset reset equals equals";
+}
+ .seven{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: seven;
+    color:hsl(221, 14%, 31%) ;
+    background: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    
+}
+.eight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: eight;
+    color:hsl(221, 14%, 31%) ;
+    background: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    
+}
+.nine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: nine;
+    color:hsl(221, 14%, 31%);
+    background: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    
+}
+.delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: delete;
+    color:hsl(0, 0%, 100%) ;
+    background: hsl(225, 21%, 49%);
+    border-radius: 5px;
+    /* background-color: hsl(30, 25%, 89%); */
+    
+}
+.four{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: four;
+    color:hsl(221, 14%, 31%);
+    background: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    
+}
+.five{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: five;
+    color:hsl(221, 14%, 31%);
+    background: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    
+}
+.six{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: six;
+    color:hsl(221, 14%, 31%) ;
+    background: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    
+}
+.plus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: plus;
+    color:hsl(221, 14%, 31%) ;
+    background: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    
+}
+.one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: one;
+    color:hsl(221, 14%, 31%) ;
+    background: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    
+}
+.two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: two;
+    color:hsl(221, 14%, 31%);
+    background: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    
+}
+.three{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: three;
+    color:hsl(221, 14%, 31%) ;
+    background: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    
+}
+.minus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: minus;
+    color:hsl(221, 14%, 31%) ;
+    background: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    
+}
+.period{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: period;
+    color:hsl(221, 14%, 31%);
+    background: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    
+}
+.zero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: zero;
+    color:hsl(221, 14%, 31%) ;
+    background: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    
+}
+.slash{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: slash;
+    color:hsl(221, 14%, 31%) ;
+    background: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    
+}
+.times{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: times;
+    color:hsl(221, 14%, 31%) ;
+    background: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    
+}
+.reset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: reset;
+    color: hsl(0, 0%, 100%);
+    
+    border-radius: 5px;
+    background-color: hsl(225, 21%, 49%);
+    
+}
+.equals{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: equals;
+    color:hsl(0, 0%, 100%) ;
+    border-radius: 5px;
+    background-color: hsl(6, 63%, 50%);
+    
+}  
