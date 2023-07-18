@@ -73,3 +73,15 @@ slash.addEventListener('click',()=>appendValue('/'))
     }
   }
 equals.addEventListener('click',()=>calculate())
+
+let clearScreen=()=> {
+  const display = document.getElementById('display');
+  display.value = '';
+}
+reset.addEventListener('click',()=>clearScreen());
+
+let deleteLastInput=()=> {
+  const display = document.getElementById('display');
+  display.value = display.value.slice(0, -1);
+}
+delet.addEventListener('click',()=>deleteLastInput())
