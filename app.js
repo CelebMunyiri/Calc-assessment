@@ -1,4 +1,10 @@
 'use script'
+let expression=''
+
+let appendValue=(value)=> {
+    expression += value;
+    document.getElementById('display').value = expression;
+  }
 const one=document.querySelector('.one')
 const zero=document.querySelector('.zero')
 const two=document.querySelector('.two')
@@ -9,6 +15,15 @@ const six=document.querySelector('.six')
 const seven=document.querySelector('.seven')
 const eight=document.querySelector('.eight')
 const nine=document.querySelector('.nine')
+const period=document.querySelector('.period')
+const delet=document.querySelector('.delete')
+const slash=document.querySelector('.slash')
+const plus=document.querySelector('.plus')
+const minus=document.querySelector('.minus')
+const times=document.querySelector('.times')
+const reset=document.querySelector('.reset')
+const equals=document.querySelector('.equals')
+
 
 one.addEventListener('click',()=>{
     appendValue('1')
@@ -40,13 +55,12 @@ eight.addEventListener('click',()=>{
 nine.addEventListener('click',()=>{
     appendValue('9')
 })
+plus.addEventListener('click',()=>appendValue('+'));
+times.addEventListener('click',()=>appendValue('*'))
+minus.addEventListener('click',()=>appendValue('-'))
+period.addEventListener('click',()=>appendValue('.'))
+slash.addEventListener('click',()=>appendValue('/'))
 
-let expression=''
-
-let appendValue=(value)=> {
-    expression += value;
-    document.getElementById('display').value = expression;
-  }
 
   function calculate() {
     try {
@@ -58,3 +72,4 @@ let appendValue=(value)=> {
       expression = '';
     }
   }
+equals.addEventListener('click',()=>calculate())
