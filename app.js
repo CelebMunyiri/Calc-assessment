@@ -68,7 +68,7 @@ slash.addEventListener('click',()=>appendValue('/'))
       document.getElementById('display').value = result;
       expression = '';
     } catch (error) {
-      document.getElementById('display').value = 'Error';
+      document.getElementById('display').value = 'Syntax ERROR';
       expression = '';
     }
   }
